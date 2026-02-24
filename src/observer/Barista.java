@@ -1,7 +1,6 @@
 package observer;
 
 import subject.*;
-import observer.Observer;
 
 public class Barista implements Observer, Display {
 
@@ -61,6 +60,5 @@ public class Barista implements Observer, Display {
         System.out.println("Crop height: " + cropHeight + " meters.");
         System.out.println("Producer: " + producerName);
         System.out.println("Available quantity: " + availableQuantity + " lb.");
-        System.out.println("----------------------------------");
     }
 }

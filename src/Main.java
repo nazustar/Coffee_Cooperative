@@ -1,6 +1,4 @@
 import observer.*;
-import subject.*;
-
 public class Main {
     public static void main(String[] args) {
 

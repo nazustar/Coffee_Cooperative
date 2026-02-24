@@ -1,7 +1,6 @@
 package observer;
 
 import java.util.ArrayList;
-import observer.Observer;
 import subject.Subject;
 
 public class CoffeeCoopData implements Subject{
@@ -25,11 +24,15 @@ public class CoffeeCoopData implements Subject{
     //Implementations from subject.
     @Override
     public void registerObserver(Observer o) {
+        System.out.println("----------------------------------");
+        System.out.println("Barista: " + ((Barista)o).getName() + " has subscribed.");
         observers.add(o);
     }
 
     @Override
     public void removeObserver(Observer o){
+        System.out.println("----------------------------------");
+        System.out.println("Barista: " + ((Barista)o).getName() + " has unsubscribed."); 
         observers.remove(o);
     }
 
